@@ -15,8 +15,9 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Say myName"
-          command: "echo $devops_engr_env_var"
+          name: "print an envr var in our project"
+          command: 
+            echo $devops_engr_env_var
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
